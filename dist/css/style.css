@@ -1,7 +1,82 @@
-* {
+*,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Poppins", serif;
 }
+
+/* ukuran desktop 1280px keatas */
+.container {
+  /* background-color: red; */
+  width: 80%;
+  /* untuk mebagi rata margin krin dan kanan dari ruang yg tersisa */
+  /* bisa digunakan untuk blok elemen kayak div */
+  margin-inline: auto;
+}
+/* common breakpoints */
+/* ketika ukuran 992px atau tablet */
+
+/* pakai media queries */
+
+@media (max-width: 992px) {
+  .container {
+    /* space tersisa mengecil */
+    width: 90%;
+  }
+}
+
+/* Navbar */
+.navbar {
+  /* vertikal,horizontal */
+  /* cara hafalin lihat jam dari jam 12. yg artinya atas dulu */
+  padding: 30px 0;
+  /* background-color: tomato; */
+}
+
+.navbar-box {
+  /* width: 90%; */
+  display: flex;
+  justify-content: space-between;
+  /* sejajar secara horizontal */
+  align-items: center;
+  /* background-color: aqua; */
+  /* margin-inline: auto; */
+}
+
+.navbar-box .menu {
+  display: flex;
+  gap: 1rem;
+  /* align-items: center; */
+}
+
+.navbar-box .menu li {
+  list-style: none;
+}
+
+.navbar-box .menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* di ukuran 768px masih tablet */
+
+@media (max-width: 768px) {
+  .navbar-box {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .navbar-box .menu {
+    /* otomatis ke bawah ketika tidak cukup layarnya. ini settingan untuk 475px ke bawah */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* cek diukuran 575px masih aman */
+
+/* cek lagi di  ukuran lebih kecil*/
+
+/* buat inspect bisa juga pake f12 */
+/* Navbar */
