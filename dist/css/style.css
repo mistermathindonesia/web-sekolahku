@@ -80,3 +80,54 @@ html {
 
 /* buat inspect bisa juga pake f12 */
 /* Navbar */
+
+/* Hero */
+.hero-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/assets/images/hero.webp);
+  width: 100%;
+  border-radius: 25px;
+  padding: 100px 20px;
+  color: white;
+}
+
+.hero-box h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.hero-box p {
+  margin-bottom: 30px;
+  line-height: 2;
+  width: 500px;
+  opacity: 75%;
+}
+
+.hero-box a {
+  text-decoration: none;
+  color: white;
+  background-color: indigo;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.hero-box a:hover {
+  background-color: rgb(103, 2, 175);
+}
+
+@media (max-width: 575px) {
+  .hero-box p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 475px) {
+  .hero-box h1 {
+    font-size: 30px;
+  }
+  .hero-box p {
+    font-size: 14px;
+  }
+}
+/* Hero */
